@@ -90,7 +90,6 @@ function GiftCardModal({ onClose }) {
               </div>
             )}
 
-            {/* Animated card preview */}
             <AnimatePresence mode='wait'>
               <motion.div
                 key={selected}
@@ -200,7 +199,7 @@ function GiftCardModal({ onClose }) {
                 <span>Gift card for {form.recipientName}</span><span>${amount}</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px', color: 'var(--muted)', marginBottom: '8px' }}>
-                <span>Delivered to</span><span>{form.recipientEmail}</span>
+                <span>Delivered to</span><span style={{ maxWidth: '200px', overflow: 'hidden', textOverflow: 'ellipsis' }}>{form.recipientEmail}</span>
               </div>
               <div style={{ height: '1px', background: 'var(--border)', margin: '10px 0' }} />
               <div style={{ display: 'flex', justifyContent: 'space-between', fontFamily: 'Inter Tight, sans-serif', fontSize: '16px', fontWeight: 500 }}>
@@ -308,7 +307,7 @@ export default function GiftCards() {
           </motion.div>
         </div>
 
-        {/* Gift card shaped tiles */}
+        {/* Gift card tiles */}
         <div className='gift-grid'>
           {amounts.map((a, i) => (
             <motion.div
@@ -322,7 +321,6 @@ export default function GiftCards() {
               style={{
                 background: a.gradient,
                 borderRadius: '20px',
-                padding: '28px',
                 cursor: 'pointer',
                 position: 'relative',
                 overflow: 'hidden',
@@ -344,44 +342,46 @@ export default function GiftCards() {
                 filter: 'blur(40px)', transition: 'opacity 0.3s',
               }} />
 
-              {/* Most popular badge */}
-              {a.badge && (
-                <div style={{
-                  position: 'absolute', top: '14px', right: '14px',
-                  fontSize: '9px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase',
-                  color: a.accent, background: `${a.accent}18`, padding: '4px 10px', borderRadius: '100px',
-                  border: `1px solid ${a.accent}33`,
-                }}>
-                  Most popular
-                </div>
-              )}
-
-              {/* Selected check */}
+              {/* Selected check — top left */}
               {selected === i && (
                 <motion.div
                   initial={{ scale: 0 }} animate={{ scale: 1 }}
                   transition={{ type: 'spring', damping: 14, stiffness: 300 }}
                   style={{
-                    position: 'absolute', top: '14px', left: '14px',
-                    width: '22px', height: '22px', borderRadius: '50%',
+                    position: 'absolute', top: '12px', left: '12px',
+                    width: '20px', height: '20px', borderRadius: '50%',
                     background: a.accent, display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontSize: '11px', color: '#fff',
+                    fontSize: '10px', color: '#fff',
                   }}
                 >
                   ✓
                 </motion.div>
               )}
 
-              <div style={{ position: 'absolute', bottom: '28px', left: '28px' }}>
-                <div style={{ fontSize: '10px', color: a.accent, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '8px', fontWeight: 500 }}>Umber Coffee</div>
-                <div style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: 'clamp(28px, 4vw, 36px)', fontWeight: 500, color: '#fff', letterSpacing: '-0.03em', lineHeight: 1 }}>
+              {/* Popular badge — top right, only shows when NOT selected */}
+              {a.badge && selected !== i && (
+                <div style={{
+                  position: 'absolute', top: '12px', right: '12px',
+                  fontSize: '8px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase',
+                  color: a.accent, background: `${a.accent}20`, padding: '3px 8px', borderRadius: '100px',
+                  border: `1px solid ${a.accent}40`,
+                  whiteSpace: 'nowrap',
+                }}>
+                  Popular
+                </div>
+              )}
+
+              {/* Card content — bottom left */}
+              <div style={{ position: 'absolute', bottom: '16px', left: '16px', right: '16px' }}>
+                <div style={{ fontSize: '9px', color: a.accent, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '4px', fontWeight: 500 }}>Umber Coffee</div>
+                <div style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 500, color: '#fff', letterSpacing: '-0.03em', lineHeight: 1 }}>
                   {a.value === 0 ? 'Custom' : `$${a.value}`}
                 </div>
-                <div style={{ fontSize: '11.5px', color: 'rgba(255,255,255,0.35)', marginTop: '6px', fontWeight: 300 }}>{a.label}</div>
+                <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.3)', marginTop: '4px', fontWeight: 300 }}>{a.label}</div>
               </div>
 
-              {/* Decorative bottom-right circle */}
-              <div style={{ position: 'absolute', bottom: '-20px', right: '-20px', width: '80px', height: '80px', borderRadius: '50%', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.06)' }} />
+              {/* Decorative circle */}
+              <div style={{ position: 'absolute', bottom: '-20px', right: '-20px', width: '70px', height: '70px', borderRadius: '50%', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }} />
             </motion.div>
           ))}
         </div>
@@ -399,14 +399,14 @@ export default function GiftCards() {
         .gift-grid {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
-          gap: 16px;
+          gap: 12px;
         }
         @media (max-width: 900px) {
-          .gift-grid { grid-template-columns: repeat(2, 1fr); }
+          .gift-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
         }
         @media (max-width: 480px) {
-          .gift-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-          #gift-cards { padding: 80px 24px !important; }
+          .gift-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+          #gift-cards { padding: 60px 16px !important; }
         }
       `}</style>
     </section>
