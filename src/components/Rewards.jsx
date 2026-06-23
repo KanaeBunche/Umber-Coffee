@@ -176,7 +176,7 @@ export default function Rewards() {
             <div style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: '17px', fontWeight: 600, marginBottom: '14px', letterSpacing: '-0.01em' }}>How it works</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               {[
-                'Order any drink at Umber',
+                'Order any drink at Cystal Coffee',
                 'Give your email — stamps track automatically',
                 'Hit 10 and we email you instantly',
                 'Show the email, get your free coffee',

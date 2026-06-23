@@ -74,7 +74,7 @@ export default function Press() {
             transition={{ duration: 0.6 }}
             style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '12px' }}
           >
-            Inside Umber
+            Inside Crystal
           </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 20 }} animate={isInView ? { opacity: 1, y: 0 } : {}}

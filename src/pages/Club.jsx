@@ -249,7 +249,7 @@ function SignupModal({ onClose, onSuccess }) {
             <h2 style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: '26px', fontWeight: 500, letterSpacing: '-0.02em', marginBottom: '12px' }}>Welcome to the Club.</h2>
             <p style={{ fontSize: '15px', color: 'var(--muted)', fontWeight: 300, lineHeight: 1.7, marginBottom: '36px' }}>
               Your $2/month is going to <strong style={{ color: 'var(--text)', fontWeight: 500 }}>{causes.find(c => c.id === selectedCause)?.name}</strong>.<br />
-              Every drink you order at Umber is now tracked to <strong style={{ color: 'var(--text)', fontWeight: 500 }}>{email}</strong>.<br /><br />
+              Every drink you order at Crystal Coffee is now tracked to <strong style={{ color: 'var(--text)', fontWeight: 500 }}>{email}</strong>.<br /><br />
               Hit 10 drinks and we'll email you a free coffee — no app needed.
             </p>
             <button onClick={handleDone} style={{ width: '100%', padding: '16px', background: 'var(--text)', color: '#fff', border: 'none', borderRadius: '100px', fontSize: '14px', fontWeight: 500, cursor: 'pointer' }}>
@@ -274,7 +274,7 @@ export default function Club() {
       </AnimatePresence>
 
       <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, height: '64px', padding: '0 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'rgba(247,244,239,0.92)', backdropFilter: 'blur(20px)', borderBottom: '1px solid var(--border)' }}>
-        <Link to='/' style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: '18px', fontWeight: 500, letterSpacing: '-0.02em', color: 'var(--text)', textDecoration: 'none' }}>Umber</Link>
+        <Link to='/' style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: '18px', fontWeight: 500, letterSpacing: '-0.02em', color: 'var(--text)', textDecoration: 'none' }}> Crystal Coffee</Link>
         <Link to='/' style={{ fontSize: '13px', color: 'var(--muted)', textDecoration: 'none' }}>← Back to home</Link>
       </nav>
 

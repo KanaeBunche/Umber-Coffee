@@ -102,11 +102,11 @@ function GiftCardModal({ onClose }) {
                 }}
               >
                 <div style={{ position: 'absolute', top: '-40px', right: '-40px', width: '160px', height: '160px', borderRadius: '50%', background: currentCard.accent, opacity: 0.08, filter: 'blur(40px)' }} />
-                <div style={{ fontSize: '10px', color: currentCard.accent, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '12px', fontWeight: 500 }}>Umber Gift Card</div>
+                <div style={{ fontSize: '10px', color: currentCard.accent, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '12px', fontWeight: 500 }}> Crystal Coffee Gift Card</div>
                 <div style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: '44px', fontWeight: 500, color: '#fff', letterSpacing: '-0.03em', lineHeight: 1 }}>
                   {amount > 0 ? `$${amount}` : '$—'}
                 </div>
-                <div style={{ position: 'absolute', bottom: '20px', left: '24px', fontSize: '11px', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.05em' }}>No expiry · Umber NYC</div>
+                <div style={{ position: 'absolute', bottom: '20px', left: '24px', fontSize: '11px', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.05em' }}>No expiry · Crystal Coffee NYC</div>
                 <div style={{ position: 'absolute', bottom: '20px', right: '24px', width: '32px', height: '32px', borderRadius: '50%', background: currentCard.accent, opacity: 0.3 }} />
               </motion.div>
             </AnimatePresence>
@@ -242,7 +242,7 @@ function GiftCardModal({ onClose }) {
               <div style={{ position: 'absolute', top: '-40px', right: '-40px', width: '160px', height: '160px', borderRadius: '50%', background: currentCard.accent, opacity: 0.08, filter: 'blur(40px)' }} />
               <div style={{ fontSize: '10px', color: currentCard.accent, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Gift Card Code</div>
               <div style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: '20px', fontWeight: 500, color: '#fff', letterSpacing: '0.06em', marginBottom: '8px' }}>{code}</div>
-              <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.3)' }}>Valid for ${amount} · No expiry · Umber NYC</div>
+              <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.3)' }}>Valid for ${amount} · No expiry · Crystal Coffee NYC</div>
               {form.message && (
                 <div style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.08)', fontSize: '13px', color: 'rgba(255,255,255,0.5)', fontStyle: 'italic' }}>
                   "{form.message}"
@@ -373,7 +373,7 @@ export default function GiftCards() {
 
               {/* Card content — bottom left */}
               <div style={{ position: 'absolute', bottom: '16px', left: '16px', right: '16px' }}>
-                <div style={{ fontSize: '9px', color: a.accent, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '4px', fontWeight: 500 }}>Umber Coffee</div>
+                <div style={{ fontSize: '9px', color: a.accent, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '4px', fontWeight: 500 }}>Crystal Coffee</div>
                 <div style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 500, color: '#fff', letterSpacing: '-0.03em', lineHeight: 1 }}>
                   {a.value === 0 ? 'Custom' : `$${a.value}`}
                 </div>

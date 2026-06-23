@@ -19,7 +19,7 @@ export default function About() {
     <div style={{ background: 'var(--bg)', minHeight: '100vh' }}>
 
       <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, height: '64px', padding: '0 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'rgba(247,244,239,0.92)', backdropFilter: 'blur(20px)', borderBottom: '1px solid var(--border)' }}>
-        <Link to='/' style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: '18px', fontWeight: 500, letterSpacing: '-0.02em', color: 'var(--text)', textDecoration: 'none' }}>Umber</Link>
+        <Link to='/' style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: '18px', fontWeight: 500, letterSpacing: '-0.02em', color: 'var(--text)', textDecoration: 'none' }}>Crystal Coffee</Link>
         <Link to='/' style={{ fontSize: '13px', color: 'var(--muted)', textDecoration: 'none' }}>← Back</Link>
       </nav>
 
@@ -28,7 +28,7 @@ export default function About() {
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
             style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '20px' }}>
-            About Umber
+            About Crystal Coffee
           </motion.div>
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
             style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: 'clamp(40px, 6vw, 80px)', fontWeight: 500, letterSpacing: '-0.03em', lineHeight: 1.05, color: '#fff', marginBottom: '32px' }}>
@@ -36,7 +36,7 @@ export default function About() {
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }}
             style={{ fontSize: '18px', color: 'rgba(255,255,255,0.45)', fontWeight: 300, lineHeight: 1.8, maxWidth: '620px' }}>
-            We opened Umber in Chelsea in 2026 with one belief: great coffee shouldn't cost you your morning. Order ahead, give your email at the counter, and walk straight in. No waiting. No fuss.
+            We opened Crystal Coffee in Chelsea in 2026 with one belief: great coffee shouldn't cost you your morning. Order ahead, give your email at the counter, and walk straight in. No waiting. No fuss.
           </motion.p>
         </div>
       </section>
@@ -53,7 +53,7 @@ export default function About() {
               Our founder spent three years watching New Yorkers wait 15 minutes for a $7 latte before a morning meeting. The coffee was great. The experience wasn't.
             </p>
             <p style={{ fontSize: '15px', color: 'var(--muted)', fontWeight: 300, lineHeight: 1.8 }}>
-              Umber was built differently from the ground up — order-ahead first, no app required, and a loyalty program that gives back to the city instead of just collecting data on you.
+              Crystal Coffee was built differently from the ground up — order-ahead first, no app required, and a loyalty program that gives back to the city instead of just collecting data on you.
             </p>
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.12 }}>
@@ -71,7 +71,7 @@ export default function About() {
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '56px' }}>
             <div style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '12px' }}>What we believe</div>
-            <h2 style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 500, letterSpacing: '-0.025em' }}>The Umber way.</h2>
+            <h2 style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 500, letterSpacing: '-0.025em' }}>The Crystal Coffee way.</h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px' }}>
             {values.map((v, i) => (

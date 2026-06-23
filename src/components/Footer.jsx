@@ -23,7 +23,7 @@ export default function Footer() {
               fontFamily: 'Inter Tight, sans-serif', fontSize: '22px', fontWeight: 500,
               color: '#fff', letterSpacing: '-0.03em', marginBottom: '10px',
             }}>
-              Umber Coffee
+            Crystal Coffee
             </div>
             <div style={{ fontSize: '13px', color: 'rgba(255,255,255,0.28)', fontWeight: 300, lineHeight: 1.6, maxWidth: '220px' }}>
               Specialty coffee in New York City.<br />Order ahead. Skip the line.
@@ -76,7 +76,7 @@ export default function Footer() {
                 <circle cx="12" cy="12" r="4.5"/>
                 <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" stroke="none"/>
               </svg>
-              @umbercoffeenyc
+              @crystalcoffeenyc
             </a>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function Footer() {
           flexWrap: 'wrap', gap: '12px',
         }}>
           <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.18)', fontWeight: 300 }}>
-            © 2026 Umber Coffee, NYC
+            © 2026 Crystal Coffee, NYC
           </div>
           <div style={{ display: 'flex', gap: '24px' }}>
             {['Privacy', 'Terms'].map(l => (

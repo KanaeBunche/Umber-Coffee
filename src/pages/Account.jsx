@@ -12,8 +12,8 @@ const causes = [
 // Fake account data
 const fakeAccounts = {
   'jane@example.com': { name: 'Jane', drinks: 8, cause: 'cityharvest', since: 'March 2026', active: true },
-  'test@umber.com': { name: 'Alex', drinks: 3, cause: 'parks', since: 'May 2026', active: true },
-  'demo@umber.com': { name: 'Sam', drinks: 10, cause: 'robinhood', since: 'January 2026', active: false },
+  'test@crystalcoffeenyc.com': { name: 'Alex', drinks: 3, cause: 'parks', since: 'May 2026', active: true },
+  'demo@crystalcoffeenyc.com': { name: 'Sam', drinks: 10, cause: 'robinhood', since: 'January 2026', active: false },
 }
 
 export default function Account() {
@@ -58,7 +58,7 @@ export default function Account() {
     <div style={{ background: 'var(--bg)', minHeight: '100vh' }}>
 
       <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, height: '64px', padding: '0 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'rgba(247,244,239,0.92)', backdropFilter: 'blur(20px)', borderBottom: '1px solid var(--border)' }}>
-        <Link to='/' style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: '18px', fontWeight: 500, letterSpacing: '-0.02em', color: 'var(--text)', textDecoration: 'none' }}>Umber</Link>
+        <Link to='/' style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: '18px', fontWeight: 500, letterSpacing: '-0.02em', color: 'var(--text)', textDecoration: 'none' }}>Crystal Coffee</Link>
         {account && (
           <button onClick={() => { setAccount(null); setEmail(''); setCancelled(false); setResubscribed(false) }}
             style={{ fontSize: '13px', color: 'var(--muted)', background: 'none', border: '1px solid var(--border)', borderRadius: '100px', padding: '7px 18px', cursor: 'pointer' }}>

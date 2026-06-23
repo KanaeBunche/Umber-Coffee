@@ -112,7 +112,7 @@ export default function OrderAhead() {
               <div style={{ width: '90px', height: '24px', background: '#1a1a1a', borderRadius: '0 0 18px 18px', position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', zIndex: 2 }} />
               <div style={{ flex: 1, background: 'var(--bg)', borderRadius: '30px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
                 <div style={{ padding: '32px 18px 14px' }}>
-                  <div style={{ fontSize: '9px', fontWeight: 500, color: 'var(--accent)', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '4px' }}>Umber Coffee</div>
+                  <div style={{ fontSize: '9px', fontWeight: 500, color: 'var(--accent)', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '4px' }}>Crystal Coffee</div>
                   <div style={{ fontFamily: 'Inter Tight, sans-serif', fontSize: '16px', fontWeight: 600, color: 'var(--text)', letterSpacing: '-0.02em' }}>Good morning ☀︎</div>
                 </div>
                 <div style={{ height: '1px', background: 'var(--border)', margin: '0 18px' }} />
