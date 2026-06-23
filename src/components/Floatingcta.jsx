@@ -29,23 +29,20 @@ export default function FloatingCTA() {
         boxShadow: '-4px 4px 24px rgba(0,0,0,0.3)',
         cursor: 'pointer',
         outline: 'none',
-        transform: `translateX(${hovered ? '0px' : 'calc(100% - 44px)'})`,
-        transition: 'transform 0.35s cubic-bezier(0.16,1,0.3,1), background 0.2s ease',
+        transition: 'background 0.2s ease',
         whiteSpace: 'nowrap',
       }}
     >
       <span style={{ fontSize: '15px', lineHeight: 1, flexShrink: 0 }}>☕</span>
 
       <span style={{
-        fontSize: '12.5px',
+        fontSize: '12px',
         fontWeight: 500,
         fontFamily: 'Inter, sans-serif',
-        color: '#F5F1EB',
+        color: 'rgba(245,241,235,0.75)',
         letterSpacing: '0.02em',
-        opacity: hovered ? 1 : 0,
-        transition: 'opacity 0.15s ease',
       }}>
-        Want this design? Build yours
+        Want this design?
       </span>
 
       <motion.span
@@ -55,7 +52,7 @@ export default function FloatingCTA() {
           fontSize: '13px',
           lineHeight: 1,
           flexShrink: 0,
-          color: hovered ? '#F5F1EB' : 'rgba(245,241,235,0.5)',
+          color: hovered ? '#F5F1EB' : 'rgba(245,241,235,0.4)',
           transition: 'color 0.2s ease',
         }}
       >
