@@ -9,11 +9,9 @@ const items = [
   { id: 2, name: 'Oat Latte', desc: 'Double ristretto, steamed oat milk, light foam', price: 6.50, cal: 180, category: 'Coffee', img: 'https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&q=80&fit=crop' },
   { id: 3, name: 'Cortado', desc: 'Equal parts espresso and warm whole milk', price: 5.50, cal: 80, category: 'Coffee', img: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80&fit=crop' },
   { id: 4, name: 'Cappuccino', desc: 'Espresso, steamed milk, thick microfoam', price: 5.75, cal: 120, category: 'Coffee', img: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&q=80&fit=crop' },
-  { id: 5, name: 'Flat White', desc: 'Ristretto shots, velvety steamed whole milk', price: 6.00, cal: 150, category: 'Coffee', img: 'https://images.unsplash.com/photo-1574432042183-e2a8f7d3c66f?w=400&q=80&fit=crop' },
   { id: 6, name: 'Americano', desc: 'Espresso diluted with hot water', price: 4.00, cal: 15, category: 'Coffee', img: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&q=80&fit=crop' },
   { id: 7, name: 'Matcha Latte', desc: 'Ceremonial grade, oat milk, touch of vanilla', price: 7.00, cal: 200, category: 'Matcha & Tea', img: 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=400&q=80&fit=crop' },
   { id: 8, name: 'Hojicha Latte', desc: 'Roasted green tea, oat milk, naturally sweet', price: 6.75, cal: 170, category: 'Matcha & Tea', img: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&q=80&fit=crop' },
-  { id: 9, name: 'Chai Latte', desc: 'House spiced chai, steamed oat milk', price: 6.00, cal: 190, category: 'Matcha & Tea', img: 'https://images.unsplash.com/photo-1562547256-2c5ee93bf0e0?w=400&q=80&fit=crop' },
   { id: 10, name: 'Cold Brew', desc: '20-hour steep, black or over oat milk', price: 6.00, cal: 20, category: 'Cold', img: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80&fit=crop' },
   { id: 11, name: 'Iced Oat Latte', desc: 'Espresso over ice, oat milk', price: 6.50, cal: 160, category: 'Cold', img: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=400&q=80&fit=crop' },
   { id: 12, name: 'Iced Matcha', desc: 'Ceremonial matcha, oat milk, over ice', price: 7.00, cal: 180, category: 'Cold', img: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&q=80&fit=crop' },
@@ -86,7 +84,6 @@ export default function Menu() {
         </motion.div>
       </div>
 
-      {/* Sticky category tabs */}
       <div style={{ position: 'sticky', top: '64px', zIndex: 50, background: 'rgba(247,244,239,0.95)', backdropFilter: 'blur(20px)', borderBottom: '1px solid var(--border)', padding: '0 48px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', gap: '0', overflowX: 'auto' }}>
           {categories.map(c => (
