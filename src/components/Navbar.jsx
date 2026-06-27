@@ -34,7 +34,7 @@ export default function Navbar({ onOrderClick }) {
           letterSpacing: '-0.02em', color: scrolled ? '#111111' : '#ffffff',
           textDecoration: 'none', transition: 'color 0.3s ease', flexShrink: 0,
         }}>
-         Crystal
+        Crystal  
         </Link>
 
         <ul className='nav-desktop' style={{ display: 'flex', alignItems: 'center', gap: '32px', listStyle: 'none' }}>
