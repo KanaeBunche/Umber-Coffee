@@ -20,7 +20,7 @@ import Staff from './pages/Staff'
 import Menu from './pages/Menu'
 import About from './pages/About'
 import Account from './pages/Account'
-import FloatingCTA from './components/Floatingcta'
+import FloatingCTA from './components/FloatingCTA'
 import './index.css'
 
 function Home({ onOrderClick }) {
